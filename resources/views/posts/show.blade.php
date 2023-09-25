@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="/css/style.css" >
 </head>
 <body>
-    @foreach ($posts as $post)
-        <a href='posts/{{ $post->id }}'>{{ $post->title }}</a>
-        <p>{{ $post->body }}</p>
-    @endforeach
-    {{ $posts->links() }}
+    {{ $post->title }} <br>
+    {{ $post->body }} <br>
+    <a href="/">一覧ページへ</a>
 </body>
 </html>
