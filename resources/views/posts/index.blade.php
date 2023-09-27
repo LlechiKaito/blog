@@ -12,6 +12,7 @@
         <a href='posts/{{ $post->id }}'>{{ $post->title }}</a>
         <p>{{ $post->body }}</p>
     @endforeach
+    <a href="/posts/create">記事の追加へ</a>
     {{ $posts->links() }}
 </body>
 </html>
