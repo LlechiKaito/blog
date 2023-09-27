@@ -11,6 +11,7 @@
     @foreach ($posts as $post)
         <a href='posts/{{ $post->id }}'>{{ $post->title }}</a>
         <p>{{ $post->body }}</p>
+        <a href='posts/{{ $post->id }}/edit'>この投稿の編集</a><br><br>
     @endforeach
     <a href="/posts/create">記事の追加へ</a>
     {{ $posts->links() }}
