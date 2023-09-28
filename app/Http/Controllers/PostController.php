@@ -49,4 +49,10 @@ class PostController extends Controller
         // update()を使うとupdated_atが更新される（他にも理由がある）
         return redirect('/posts/' . $post->id);
     }
+    
+    public function delete( Post $post )
+    {
+        $post->delete();
+        return redirect('/posts');
+    }
 }
